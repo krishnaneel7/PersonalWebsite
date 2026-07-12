@@ -136,9 +136,45 @@ li{
 
 }
 
+<!-- Project  -->
+.project-box{
+
+padding:20px;
+margin:20px 0;
+
+}
 
 
+.project-box a{
 
+text-decoration:none;
+
+}
+
+
+button{
+
+padding:10px 20px;
+
+background:#0077ff;
+
+color:white;
+
+border:none;
+
+border-radius:5px;
+
+cursor:pointer;
+
+}
+
+
+button:hover{
+
+background:#0055aa;
+
+}
+<!-- Project -->
 
 button{
 
@@ -164,7 +200,44 @@ button:hover{
 
 }
 
+.contact-box{
 
+margin:25px 0;
+padding:20px;
+border-radius:10px;
+
+}
+
+
+.contact-box a{
+
+color:#0077B5;
+text-decoration:none;
+font-size:18px;
+
+}
+
+
+.contact-box a:hover{
+
+text-decoration:underline;
+
+}
+
+.linkedin-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#0077B5;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.linkedin-btn:hover{
+    background:#005983;
+}
 
 
 
