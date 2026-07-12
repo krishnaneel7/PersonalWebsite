@@ -1,36 +1,30 @@
 *{
-
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
 
 
 body{
 
     font-family:Arial, sans-serif;
-
     background:#f4f4f4;
-
     color:#333;
+    overflow-x:hidden;
 
 }
 
 
 
-
+/* Navigation Bar */
 
 nav{
 
     background:#111;
-
     color:white;
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
     padding:20px 50px;
@@ -38,14 +32,25 @@ nav{
 }
 
 
+nav h2{
+
+    font-size:28px;
+
+}
+
 
 nav ul{
 
     display:flex;
-
     list-style:none;
-
     gap:25px;
+
+}
+
+
+nav ul li{
+
+    margin:0;
 
 }
 
@@ -53,13 +58,21 @@ nav ul{
 nav a{
 
     color:white;
-
     text-decoration:none;
+    font-size:16px;
+
+}
+
+
+nav a:hover{
+
+    color:#00ccff;
 
 }
 
 
 
+/* Home Header */
 
 
 header{
@@ -79,10 +92,17 @@ header{
 }
 
 
-
 header h1{
 
     font-size:40px;
+    margin-bottom:15px;
+
+}
+
+
+header h2{
+
+    font-size:24px;
 
 }
 
@@ -95,11 +115,10 @@ header button{
 
 
 
-
+/* Content Cards */
 
 
 .card{
-
 
     background:white;
 
@@ -113,21 +132,35 @@ header button{
 
     box-shadow:0 5px 15px gray;
 
-
 }
 
 
-
-.card h2{
+.card h1{
 
     color:#0066ff;
-
     margin-bottom:20px;
 
 }
 
 
+.card h2{
 
+    color:#0066ff;
+    margin-bottom:20px;
+
+}
+
+
+.card p{
+
+    line-height:1.6;
+    margin-bottom:15px;
+
+}
+
+
+
+/* Lists */
 
 
 li{
@@ -136,109 +169,120 @@ li{
 
 }
 
-<!-- Project  -->
+
+
+/* Project */
+
+
 .project-box{
 
-padding:20px;
-margin:20px 0;
+    padding:20px;
+    margin:20px 0;
 
 }
 
 
 .project-box a{
 
-text-decoration:none;
+    text-decoration:none;
 
 }
+
+
+
+/* Buttons */
 
 
 button{
 
-padding:10px 20px;
+    padding:12px 25px;
 
-background:#0077ff;
-
-color:white;
-
-border:none;
-
-border-radius:5px;
-
-cursor:pointer;
-
-}
-
-
-button:hover{
-
-background:#0055aa;
-
-}
-<!-- Project -->
-
-button{
-
-    background:#00a651;
+    background:#0077ff;
 
     color:white;
 
     border:none;
 
-    padding:12px 25px;
-
     border-radius:5px;
 
     cursor:pointer;
 
-}
+    font-size:16px;
 
+}
 
 
 button:hover{
 
-    background:#007a3d;
+    background:#0055aa;
 
 }
 
+
+
+/* Contact */
+
+
 .contact-box{
 
-margin:25px 0;
-padding:20px;
-border-radius:10px;
+    margin:25px 0;
+    padding:20px;
 
 }
 
 
 .contact-box a{
 
-color:#0077B5;
-text-decoration:none;
-font-size:18px;
+    color:#0077B5;
+
+    text-decoration:none;
+
+    font-size:18px;
 
 }
 
 
 .contact-box a:hover{
 
-text-decoration:underline;
+    text-decoration:underline;
 
 }
+
+
+
+/* LinkedIn Button */
+
 
 .linkedin-btn{
+
     display:inline-block;
+
     margin-top:15px;
+
     padding:12px 25px;
+
     background:#0077B5;
+
     color:white;
+
     text-decoration:none;
+
     border-radius:6px;
+
     font-weight:bold;
+
 }
+
 
 .linkedin-btn:hover{
+
     background:#005983;
+
 }
 
+
+
+/* Footer */
 
 
 footer{
@@ -250,5 +294,114 @@ footer{
     text-align:center;
 
     padding:20px;
+
+}
+
+
+
+
+
+/* ========================= */
+/* Mobile Responsive Design */
+/* ========================= */
+
+
+@media(max-width:768px){
+
+
+    nav{
+
+        flex-direction:column;
+
+        padding:20px;
+
+        text-align:center;
+
+    }
+
+
+    nav h2{
+
+        margin-bottom:15px;
+
+    }
+
+
+
+    nav ul{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        width:100%;
+
+    }
+
+
+
+    nav ul li{
+
+        text-align:center;
+
+    }
+
+
+
+
+    header{
+
+        padding:50px 15px;
+
+    }
+
+
+    header h1{
+
+        font-size:30px;
+
+    }
+
+
+    header h2{
+
+        font-size:18px;
+
+    }
+
+
+
+
+    .card{
+
+        width:90%;
+
+        padding:20px;
+
+    }
+
+
+
+    .card h1{
+
+        font-size:25px;
+
+    }
+
+
+    .card h2{
+
+        font-size:21px;
+
+    }
+
+
+
+    button{
+
+        width:auto;
+
+    }
+
 
 }
